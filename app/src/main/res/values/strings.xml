@@ -2,4 +2,8 @@
     <string name="app_name">My Application</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+
+    <!--Errors-->
+    <string name="input_is_null">The text input can not be null</string>
+
 </resources>

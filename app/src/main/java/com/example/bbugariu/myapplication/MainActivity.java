@@ -20,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editText);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
+
+        if (message.length() > 0) {
+            startActivity(intent);
+        } else {
+            AlertHelper alert = new AlertHelper();
+            alert.build(R.string.input_is_null, this).show();
+        }
     }
 }
